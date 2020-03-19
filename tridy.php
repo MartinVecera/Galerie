@@ -1,12 +1,12 @@
 <?php
 
 
-class Galerie 
+class Galerie
 {
 
     public $precteni_obr;
 
-    public function __constructor ($precteni_obr)
+    public function __construct($precteni_obr)
     {
         $this->precteni_obr = $precteni_obr;
     }
