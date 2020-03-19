@@ -1,44 +1,32 @@
 <?php 
 
-require_once ("_tridy.php");
+include("tridy.php");
 
-$div = " ";
-$div = "<div>"; 
+$usporadani = "";
 
-function galerie ($moje_galerie)
-{
-
-    $moje_galerie = Galerie;
-
-    foreach ($obr as $o) 
-    {
-    $o = $galerie->first();
-
-    
-        $moje_galerie .= "<img src='galerie/'" . $o .  "alt=''>";
-    }
-
-    return $moje_galerie;
+foreach ($galerie->obrazky() as $s) {
+    $usporadani .= "<img src='" . $s . "' alt=''>";
 }
-
-$div = "</div>"; 
 
 ?>
 
 <!DOCTYPE html>
-<html lang='cs'>
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Document</title>
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
     <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
-    <title>Index</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+    <script src="https://kit.fontawesome.com/8669340d90.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<?php echo $usporadani ?>
     
 </body>
 </html>
+
