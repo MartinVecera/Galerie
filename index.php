@@ -21,7 +21,6 @@ foreach ($galerie->obrazky() as $s) {
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
-    <script src="https://kit.fontawesome.com/8669340d90.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
