@@ -1,6 +1,27 @@
 <?php 
 
+require_once ("_tridy.php");
 
+$div = " ";
+$div = "<div>"; 
+
+function galerie ($moje_galerie)
+{
+
+    $moje_galerie = Galerie;
+
+    foreach ($obr as $o) 
+    {
+    $o = $galerie->first();
+
+    
+        $moje_galerie .= "<img src='galerie/'" . $o .  "alt=''>";
+    }
+
+    return $moje_galerie;
+}
+
+$div = "</div>"; 
 
 ?>
 
